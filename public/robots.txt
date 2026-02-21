@@ -1,3 +1,11 @@
+# Allow all bots to crawl the website
+User-agent: *
+Allow: /
+Disallow: /node_modules/
+Disallow: /.env
+Disallow: /.git/
+
+# Specific bot rules
 User-agent: Googlebot
 Allow: /
 
@@ -9,6 +17,12 @@ Allow: /
 
 User-agent: facebookexternalhit
 Allow: /
+
+# Sitemap location
+Sitemap: https://sonumobile.com/sitemap.xml
+
+# Crawl delay (requests per 10 seconds)
+Crawl-delay: 1
 
 User-agent: *
 Allow: /
